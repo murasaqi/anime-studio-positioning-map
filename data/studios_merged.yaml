@@ -1,0 +1,1124 @@
+# 統合スタジオデータ（国内・海外）
+# 調査日: 2026-02-24
+# 調査方法: Web検索による新規収集 + 3エージェントによるリサーチ検証
+#
+# スコア定義:
+#   original_score: 0.0（完全受託）〜 1.0（完全オリジナル）
+#     - 売上・作品本数・IPの保有主体を総合的に判定
+#   size_founded_num: 設立時の人数（推定値含む、不明は null）
+#   size_current_num: 現在の人数（推定値含む）
+#   original_score_founded: 設立時の受託/オリジナルスコア（リサーチ検証済み）
+#   original_score_founded_evidence: 設立時スコアの根拠（1行）
+#
+# 拡張フィールド（2026-02-24追加）:
+#   parent_company: 親会社名（独立系はnull）
+#   ownership_type: independent / subsidiary / group_company
+#   business_model: commission / mixed / original / ip_holding
+#   production_type: 2d_traditional / 3d_cg / hybrid
+#   ai_adoption_level: none / experimental / production / core
+#   ai_adoption_detail: AI活用の具体的内容
+#   primary_platform: 主要取引配信PF
+#   ip_ownership_score: IP保有率スコア (0-1)
+#   revenue_billion_yen: 売上高（億円）
+#   revenue_year: 売上の決算年度
+#   operating_margin: 営業利益率
+#   licensing_ratio: 版権収入比率
+#   years_to_profitability: 黒字化年数
+
+studios:
+  # ========================================
+  # 国内スタジオ（18社）
+  # ========================================
+
+  - name: "東映アニメーション"
+    name_en: "Toei Animation"
+    country: "JP"
+    region: "domestic"
+    founded: 1948
+    size_at_foundation: "約35人"
+    size_founded_num: 35
+    size_current: "約960人"
+    size_current_num: 960
+    axis_commission_vs_original: "混合"
+    original_score: 0.55
+    original_score_founded: 0.3
+    original_score_founded_evidence: "前身・日本動画は下請け混合。1956年東映傘下で内製化を開始"
+    evidence: "ドラゴンボール・ワンピース・プリキュア等の原作付き作品が売上の柱だが、自社がIP保有・ライセンス管理を行い版権収入が大きい。近年はオリジナルIP創出も積極化。"
+    notable_works:
+      - "ONE PIECE"
+      - "ドラゴンボール"
+      - "プリキュアシリーズ"
+    sources:
+      - "https://corp.toei-anim.co.jp/ja/company/outline.html"
+      - "https://en.wikipedia.org/wiki/Toei_Animation"
+    # 拡張フィールド
+    parent_company: "東映"
+    ownership_type: "subsidiary"
+    business_model: "ip_holding"
+    production_type: "2d_traditional"
+    ai_adoption_level: "experimental"
+    ai_adoption_detail: "PFN出資、Scenify実験"
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.7
+    revenue_billion_yen: 1008
+    revenue_year: 2025
+    operating_margin: 0.258
+    licensing_ratio: 0.50
+    years_to_profitability: null
+
+  - name: "トムス・エンタテインメント"
+    name_en: "TMS Entertainment"
+    country: "JP"
+    region: "domestic"
+    founded: 1946
+    size_at_foundation: "不明"
+    size_founded_num: 10
+    size_current: "約307人"
+    size_current_num: 307
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.05
+    original_score_founded_evidence: "TBSからの発注で設立。完全受託型スタジオとして開始"
+    evidence: "名探偵コナン・ルパン三世・アンパンマン等、出版社・テレビ局発の原作付き作品の制作が中心。セガサミーグループ子会社。自社オリジナルIPは少ない。"
+    notable_works:
+      - "名探偵コナン"
+      - "ルパン三世"
+      - "それいけ!アンパンマン"
+    sources:
+      - "https://www.tms-e.co.jp/company/overview/"
+      - "https://en.wikipedia.org/wiki/TMS_Entertainment"
+    # 拡張フィールド
+    parent_company: "セガサミーHD"
+    ownership_type: "subsidiary"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+    ip_ownership_score: 0.15
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "バンダイナムコフィルムワークス"
+    name_en: "Bandai Namco Filmworks"
+    country: "JP"
+    region: "domestic"
+    founded: 1972
+    size_at_foundation: "約7人"
+    size_founded_num: 7
+    size_current: "約646人"
+    size_current_num: 646
+    axis_commission_vs_original: "混合"
+    original_score: 0.65
+    original_score_founded: 0.25
+    original_score_founded_evidence: "東北新社子会社として受託制作。1977年独立まで下請け中心"
+    evidence: "旧サンライズとして機動戦士ガンダムシリーズを筆頭に自社オリジナルIPを多数保有。ガンダム・コードギアス等のオリジナルIPの版権収入が事業の大きな柱。"
+    notable_works:
+      - "機動戦士ガンダムシリーズ"
+      - "コードギアス 反逆のルルーシュ"
+      - "ラブライブ!"
+    sources:
+      - "https://www.bnfw.co.jp/corporate/profile/"
+      - "https://ja.wikipedia.org/wiki/サンライズ_(アニメ制作ブランド)"
+    # 拡張フィールド
+    parent_company: "バンダイナムコ"
+    ownership_type: "subsidiary"
+    business_model: "ip_holding"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.65
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "プロダクション・アイジー"
+    name_en: "Production I.G"
+    country: "JP"
+    region: "domestic"
+    founded: 1987
+    size_at_foundation: "不明"
+    size_founded_num: 10
+    size_current: "約219人"
+    size_current_num: 219
+    axis_commission_vs_original: "混合"
+    original_score: 0.5
+    original_score_founded: 0.35
+    original_score_founded_evidence: "タツノコ分室の下請けだが、設立時からOVA企画も並行"
+    evidence: "攻殻機動隊・PSYCHO-PASS等のオリジナルIPを保有する一方、ハイキュー!!等の出版社原作の受託制作も多数手がける。IGポートグループとしてIP事業にも注力。"
+    notable_works:
+      - "攻殻機動隊シリーズ"
+      - "PSYCHO-PASS"
+      - "ハイキュー!!"
+    sources:
+      - "https://www.production-ig.co.jp/company"
+      - "https://en.wikipedia.org/wiki/Production_I.G"
+    # 拡張フィールド
+    parent_company: "IGポート"
+    ownership_type: "group_company"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "experimental"
+    ai_adoption_detail: "Alpaca提携"
+    primary_platform:
+      - "Netflix"
+      - "Crunchyroll"
+    ip_ownership_score: 0.45
+    revenue_billion_yen: 149
+    revenue_year: 2025
+    operating_margin: 0.096
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "ユーフォーテーブル"
+    name_en: "ufotable"
+    country: "JP"
+    region: "domestic"
+    founded: 2000
+    size_at_foundation: "約5人"
+    size_founded_num: 5
+    size_current: "約256人"
+    size_current_num: 256
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.25
+    original_score_founded_evidence: "設立初期は受託型（うたばん等）。推定値と一致"
+    evidence: "鬼滅の刃・Fateシリーズ等、出版社やゲーム会社のIPを原作とする受託制作が事業の中心。制作品質の高さで知られるが、自社オリジナルIPの保有は少ない。"
+    notable_works:
+      - "鬼滅の刃"
+      - "Fate/stay night [UBW]"
+      - "Fate/Zero"
+    sources:
+      - "https://www.ufotable.com/about/"
+      - "https://en.wikipedia.org/wiki/Ufotable"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "hybrid"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "MAPPA"
+    name_en: "MAPPA"
+    country: "JP"
+    region: "domestic"
+    founded: 2011
+    size_at_foundation: "不明"
+    size_founded_num: 10
+    size_current: "約467人"
+    size_current_num: 467
+    axis_commission_vs_original: "混合"
+    original_score: 0.35
+    original_score_founded: 0.6
+    original_score_founded_evidence: "丸山正雄がオリジナル志向で独立。坂道のアポロン等の企画主導作品で創業"
+    evidence: "進撃の巨人・呪術廻戦等の大型受託作品が売上の柱だが、チェンソーマンでは製作委員会に出資。自社出資によるオリジナル企画にも積極的に取り組み始めている。"
+    notable_works:
+      - "呪術廻戦"
+      - "進撃の巨人 The Final Season"
+      - "チェンソーマン"
+    sources:
+      - "https://www.mappa.co.jp/company/"
+      - "https://en.wikipedia.org/wiki/MAPPA"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "production"
+    ai_adoption_detail: "リップシンク自動化(ポスプロ35%削減)"
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.25
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: 5
+
+  - name: "ウィットスタジオ"
+    name_en: "WIT STUDIO"
+    country: "JP"
+    region: "domestic"
+    founded: 2012
+    size_at_foundation: "不明"
+    size_founded_num: 10
+    size_current: "約320人"
+    size_current_num: 320
+    axis_commission_vs_original: "混合"
+    original_score: 0.4
+    original_score_founded: 0.45
+    original_score_founded_evidence: "設立直後から進撃の巨人で元請制作。IG傘下だがオリジナル寄り"
+    evidence: "進撃の巨人で急成長した後、SPY×FAMILYの共同制作やオリジナル企画にも注力。Netflix等向けオリジナル作品の企画・制作にも積極的。"
+    notable_works:
+      - "進撃の巨人（Season 1-3）"
+      - "SPY×FAMILY"
+      - "王様ランキング"
+    sources:
+      - "https://www.witstudio.co.jp/"
+      - "https://ja.wikipedia.org/wiki/ウィットスタジオ"
+    # 拡張フィールド
+    parent_company: "IGポート"
+    ownership_type: "group_company"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "production"
+    ai_adoption_detail: "背景生成AI(15-20名→6-8名)"
+    primary_platform:
+      - "Netflix"
+      - "Crunchyroll"
+    ip_ownership_score: 0.3
+    revenue_billion_yen: 37.4
+    revenue_year: 2025
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: 10
+
+  - name: "CloverWorks"
+    name_en: "CloverWorks"
+    country: "JP"
+    region: "domestic"
+    founded: 2018
+    size_at_foundation: "不明"
+    size_founded_num: 100
+    size_current: "約240人"
+    size_current_num: 240
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.1
+    original_score_founded_evidence: "A-1 Picturesの子部門として設立。アニプレックス傘下の受託制作"
+    evidence: "アニプレックス子会社として、出版社やゲーム会社原作の作品制作が中心。ぼっち・ざ・ろっく!、SPY×FAMILY等、原作付き作品の受託制作が事業の主軸。"
+    notable_works:
+      - "ぼっち・ざ・ろっく!"
+      - "SPY×FAMILY"
+      - "約束のネバーランド"
+    sources:
+      - "https://cloverworks.co.jp/about/"
+      - "https://en.wikipedia.org/wiki/CloverWorks"
+    # 拡張フィールド
+    parent_company: "アニプレックス/Sony"
+    ownership_type: "subsidiary"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "A-1 Pictures"
+    name_en: "A-1 Pictures"
+    country: "JP"
+    region: "domestic"
+    founded: 2005
+    size_at_foundation: "不明"
+    size_founded_num: 30
+    size_current: "約250人"
+    size_current_num: 250
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.1
+    original_score_founded_evidence: "アニプレックス子会社として受託型で設立。推定値と一致"
+    evidence: "アニプレックス100%子会社として、SAO、かぐや様等の出版社原作作品の制作が中心。親会社アニプレックスやソニーグループの戦略に基づく受託制作が主。"
+    notable_works:
+      - "ソードアート・オンライン"
+      - "かぐや様は告らせたい"
+      - "リコリス・リコイル"
+    sources:
+      - "https://a1p.jp/about/"
+      - "https://en.wikipedia.org/wiki/A-1_Pictures"
+    # 拡張フィールド
+    parent_company: "アニプレックス/Sony"
+    ownership_type: "subsidiary"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "京都アニメーション"
+    name_en: "Kyoto Animation"
+    country: "JP"
+    region: "domestic"
+    founded: 1981
+    size_at_foundation: "約5人"
+    size_founded_num: 5
+    size_current: "約188人"
+    size_current_num: 188
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.8
+    original_score_founded: 0.05
+    original_score_founded_evidence: "主婦の仕上げ下請けとして開始。純粋な下請けスタジオ"
+    evidence: "自社レーベル「KAエスマ文庫」から原作を発掘・アニメ化する独自のビジネスモデルを確立。ヴァイオレット・エヴァーガーデン等、自社で原作権を保有する作品が多い。"
+    notable_works:
+      - "涼宮ハルヒの憂鬱"
+      - "ヴァイオレット・エヴァーガーデン"
+      - "響け!ユーフォニアム"
+    sources:
+      - "https://www.kyotoanimation.co.jp/company/outline/"
+      - "https://ja.wikipedia.org/wiki/京都アニメーション"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "original"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+    ip_ownership_score: 0.75
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "シャフト"
+    name_en: "SHAFT"
+    country: "JP"
+    region: "domestic"
+    founded: 1975
+    size_at_foundation: "約5人"
+    size_founded_num: 5
+    size_current: "約100人"
+    size_current_num: 100
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.2
+    original_score_founded: 0.05
+    original_score_founded_evidence: "仕上げ専門スタジオとして設立。12年間は下請け専業"
+    evidence: "まどか☆マギカや物語シリーズ等、出版社原作の作品制作が中心。独自の演出スタイルで知られるが、IPの権利は主に製作委員会側が保有。"
+    notable_works:
+      - "魔法少女まどか☆マギカ"
+      - "〈物語〉シリーズ"
+      - "3月のライオン"
+    sources:
+      - "https://www.shaft-web.co.jp/"
+      - "https://ja.wikipedia.org/wiki/シャフト_(アニメ制作会社)"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+    ip_ownership_score: 0.15
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "ボンズ"
+    name_en: "BONES"
+    country: "JP"
+    region: "domestic"
+    founded: 1998
+    size_at_foundation: "約8人"
+    size_founded_num: 8
+    size_current: "約119人"
+    size_current_num: 119
+    axis_commission_vs_original: "混合"
+    original_score: 0.5
+    original_score_founded: 0.25
+    original_score_founded_evidence: "サンライズ劇場版の実制作（グロス請け）が主体。2000年に初元請"
+    evidence: "僕のヒーローアカデミア等の受託作品が売上の柱である一方、エウレカセブン等のオリジナル作品も継続的に制作。「オリジナルアニメを作り続ける」ことを企業理念に掲げている。"
+    notable_works:
+      - "僕のヒーローアカデミア"
+      - "鋼の錬金術師"
+      - "交響詩篇エウレカセブン"
+    sources:
+      - "https://www.bones.co.jp/"
+      - "https://ja.wikipedia.org/wiki/ボンズ_(アニメ制作会社)"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Crunchyroll"
+      - "Netflix"
+    ip_ownership_score: 0.35
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "マッドハウス"
+    name_en: "Madhouse"
+    country: "JP"
+    region: "domestic"
+    founded: 1972
+    size_at_foundation: "約4人"
+    size_founded_num: 4
+    size_current: "約70人"
+    size_current_num: 70
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.2
+    original_score_founded: 0.25
+    original_score_founded_evidence: "虫プロ出身者が独立。初期は東映動画・東京ムービーの下請け"
+    evidence: "日本テレビ子会社として、出版社原作の受託制作が事業の中心。DEATH NOTE、ワンパンマン等の原作付き作品の制作実績が多い。近年は受託比率が高い。"
+    notable_works:
+      - "DEATH NOTE"
+      - "ワンパンマン"
+      - "サマーウォーズ"
+    sources:
+      - "https://www.madhouse.co.jp/"
+      - "https://ja.wikipedia.org/wiki/マッドハウス"
+    # 拡張フィールド
+    parent_company: "日本テレビ"
+    ownership_type: "subsidiary"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Crunchyroll"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "ポリゴン・ピクチュアズ"
+    name_en: "Polygon Pictures"
+    country: "JP"
+    region: "domestic"
+    founded: 1983
+    size_at_foundation: "不明"
+    size_founded_num: 5
+    size_current: "約300人"
+    size_current_num: 300
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.35
+    original_score_founded_evidence: "「企画型プロダクション」を標榜。パイオニアLDCとの共同企画等"
+    evidence: "シドニアの騎士、GODZILLA三部作等のフル3DCGアニメ制作が主力。Netflix・Disney+等の海外プラットフォーム向け受託が多く、自社オリジナルIPは限定的。"
+    notable_works:
+      - "シドニアの騎士"
+      - "GODZILLA（アニメ三部作）"
+      - "トランスフォーマー：アースパーク"
+    sources:
+      - "https://www.ppi.co.jp/about/factsheet/"
+      - "https://ja.wikipedia.org/wiki/ポリゴン・ピクチュアズ"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "3d_cg"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Disney+"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "オレンジ"
+    name_en: "Orange"
+    country: "JP"
+    region: "domestic"
+    founded: 2004
+    size_at_foundation: "約5人"
+    size_founded_num: 5
+    size_current: "約170人"
+    size_current_num: 170
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.2
+    original_score_founded: 0.1
+    original_score_founded_evidence: "他社作品への3DCG納入が100%。推定値と一致"
+    evidence: "宝石の国、BEASTARS等の出版社原作のフル3DCGアニメ制作が主力。3DCGアニメの制作請負が事業の中心で、自社オリジナルIPは限定的。"
+    notable_works:
+      - "宝石の国"
+      - "BEASTARS"
+      - "TRIGUN STAMPEDE"
+    sources:
+      - "https://www.orange-cg.com/company/"
+      - "https://ja.wikipedia.org/wiki/オレンジ_(アニメ制作会社)"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "3d_cg"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Crunchyroll"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "サイエンスSARU"
+    name_en: "Science SARU"
+    country: "JP"
+    region: "domestic"
+    founded: 2013
+    size_at_foundation: "約4人"
+    size_founded_num: 4
+    size_current: "約51人"
+    size_current_num: 51
+    axis_commission_vs_original: "混合"
+    original_score: 0.55
+    original_score_founded: 0.4
+    original_score_founded_evidence: "海外委託+共同プロジェクトの混合型。推定値と一致"
+    evidence: "湯浅政明監督のオリジナル作品（映像研、犬王等）で知られる一方、ダンダダン等の出版社原作の受託制作も手がける。作家性の強い作品を企画・制作。"
+    notable_works:
+      - "映像研には手を出すな!"
+      - "ダンダダン"
+      - "犬王"
+    sources:
+      - "https://sciencesaru.com/about"
+      - "https://ja.wikipedia.org/wiki/サイエンスSARU"
+    # 拡張フィールド
+    parent_company: "東宝"
+    ownership_type: "subsidiary"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Crunchyroll"
+    ip_ownership_score: 0.4
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: 7
+
+  - name: "スタジオコロリド"
+    name_en: "Studio Colorido"
+    country: "JP"
+    region: "domestic"
+    founded: 2011
+    size_at_foundation: "不明"
+    size_founded_num: 5
+    size_current: "約40人"
+    size_current_num: 40
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.75
+    original_score_founded: 0.5
+    original_score_founded_evidence: "理念はオリジナルだが初期7年はCM受託が主業務"
+    evidence: "泣きたい私は猫をかぶる、雨を告げる漂流団地等、オリジナル劇場作品の企画・制作が事業の中心。ツインエンジングループの一員としてオリジナルIPの創出に注力。"
+    notable_works:
+      - "泣きたい私は猫をかぶる"
+      - "雨を告げる漂流団地"
+      - "ペンギン・ハイウェイ"
+    sources:
+      - "https://colorido.co.jp/company/"
+      - "https://ja.wikipedia.org/wiki/スタジオコロリド"
+    # 拡張フィールド
+    parent_company: "ツインエンジン"
+    ownership_type: "group_company"
+    business_model: "original"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.6
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "ツインエンジン"
+    name_en: "Twin Engine"
+    country: "JP"
+    region: "domestic"
+    founded: 2014
+    size_at_foundation: "約2人"
+    size_founded_num: 2
+    size_current: "約107人"
+    size_current_num: 107
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.8
+    original_score_founded: 0.65
+    original_score_founded_evidence: "ノイタミナ編集長による設立。配信向けオリジナル企画戦略が明確"
+    evidence: "元フジテレビ ノイタミナ編集長が設立したアニメプロデュース会社。傘下に15のグループ制作スタジオを抱え、オリジナル企画の開発・プロデュースが事業の柱。"
+    notable_works:
+      - "劇場版 モノノ怪"
+      - "ドロヘドロ"
+      - "ゴールデンカムイ"
+    sources:
+      - "https://twinengine.jp/company-info/"
+      - "https://ja.wikipedia.org/wiki/ツインエンジン"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "original"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Amazon"
+    ip_ownership_score: 0.7
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  # ========================================
+  # 海外スタジオ（11社）
+  # ========================================
+
+  - name: "Pixar Animation Studios"
+    name_en: "Pixar Animation Studios"
+    country: "US"
+    region: "international"
+    founded: 1986
+    size_at_foundation: "約40人"
+    size_founded_num: 40
+    size_current: "約1100人"
+    size_current_num: 1100
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.95
+    original_score_founded: 0.45
+    original_score_founded_evidence: "初期はハードウェア販売+Disney CAPS受託。Toy Storyまで受託中心"
+    evidence: "自社オリジナルIP（トイ・ストーリー、ファインディング・ニモ等）を中心に制作。ディズニー傘下だが企画・制作とも自社主導。受託制作はほぼ行わない。"
+    notable_works:
+      - "Toy Story"
+      - "Finding Nemo"
+      - "Inside Out"
+    sources:
+      - "https://www.pixar.com/our-story"
+      - "https://en.wikipedia.org/wiki/Pixar"
+    # 拡張フィールド
+    parent_company: "Disney"
+    ownership_type: "subsidiary"
+    business_model: "original"
+    production_type: "3d_cg"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Disney+"
+    ip_ownership_score: 0.9
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "DreamWorks Animation"
+    name_en: "DreamWorks Animation"
+    country: "US"
+    region: "international"
+    founded: 1994
+    size_at_foundation: "約250人"
+    size_founded_num: 250
+    size_current: "約2700人"
+    size_current_num: 2700
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.9
+    original_score_founded: 0.9
+    original_score_founded_evidence: "Spielberg/Katzenberg設立。創業からオリジナルIP映画会社"
+    evidence: "シュレック、カンフー・パンダ等の自社オリジナルIPを多数保有。IPライセンス収益が主要収益源。外部からの受託制作は行わない。NBCUniversal傘下。"
+    notable_works:
+      - "Shrek"
+      - "Kung Fu Panda"
+      - "How to Train Your Dragon"
+    sources:
+      - "https://www.dreamworks.com/about"
+      - "https://en.wikipedia.org/wiki/DreamWorks_Animation"
+    # 拡張フィールド
+    parent_company: "NBCUniversal"
+    ownership_type: "subsidiary"
+    business_model: "original"
+    production_type: "3d_cg"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.9
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Illumination"
+    name_en: "Illumination"
+    country: "US"
+    region: "international"
+    founded: 2007
+    size_at_foundation: "不明"
+    size_founded_num: 10
+    size_current: "約800人"
+    size_current_num: 800
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.9
+    original_score_founded: 0.85
+    original_score_founded_evidence: "Fox配給契約でオリジナル特化。推定値と一致"
+    evidence: "怪盗グルー/ミニオンズ、ペット、SING等の自社オリジナルIPを保有・展開。制作はIllumination Studios Paris（旧Mac Guff）が担うが、IPの企画・保有は自社。"
+    notable_works:
+      - "Despicable Me / Minions"
+      - "The Secret Life of Pets"
+      - "Sing"
+    sources:
+      - "https://en.wikipedia.org/wiki/Illumination_(company)"
+      - "https://en.wikipedia.org/wiki/Illumination_Studios_Paris"
+    # 拡張フィールド
+    parent_company: "NBCUniversal"
+    ownership_type: "subsidiary"
+    business_model: "original"
+    production_type: "3d_cg"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.85
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Powerhouse Animation Studios"
+    name_en: "Powerhouse Animation Studios"
+    country: "US"
+    region: "international"
+    founded: 2001
+    size_at_foundation: "約3人"
+    size_founded_num: 3
+    size_current: "約130人"
+    size_current_num: 130
+    axis_commission_vs_original: "混合"
+    original_score: 0.4
+    original_score_founded: 0.1
+    original_score_founded_evidence: "Dilbert短編300本等の受託制作中心"
+    evidence: "Netflix『悪魔城ドラキュラ』『Blood of Zeus』等の受託制作で成長。自社オリジナル作品も制作。Netflixとファーストルック契約を締結し、オリジナルIPにも進出中。"
+    notable_works:
+      - "Castlevania"
+      - "Blood of Zeus"
+      - "Seis Manos"
+    sources:
+      - "https://www.powerhouseanimation.com/about/"
+      - "https://en.wikipedia.org/wiki/Powerhouse_Animation_Studios"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.3
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Titmouse, Inc."
+    name_en: "Titmouse"
+    country: "US"
+    region: "international"
+    founded: 2000
+    size_at_foundation: "約2人"
+    size_founded_num: 2
+    size_current: "約1200人"
+    size_current_num: 1200
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.08
+    original_score_founded_evidence: "Tシャツ会社からMTVフリーランス受託へ転身"
+    evidence: "Netflix、Adult Swim、Amazon等からの委託制作が主力。クライアントのIPに基づく制作が大半。独立系最大級のアニメスタジオ。自社オリジナルIPは限定的。"
+    notable_works:
+      - "The Venture Bros."
+      - "Big Mouth"
+      - "The Legend of Vox Machina"
+    sources:
+      - "https://titmouse.net/about/"
+      - "https://en.wikipedia.org/wiki/Titmouse,_Inc."
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Amazon"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Cartoon Saloon"
+    name_en: "Cartoon Saloon"
+    country: "IE"
+    region: "international"
+    founded: 1999
+    size_at_foundation: "約3人"
+    size_founded_num: 3
+    size_current: "約300人"
+    size_current_num: 300
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.85
+    original_score_founded: 0.6
+    original_score_founded_evidence: "初期は広告・CD-ROM受託で生存。Secret of Kells以降にオリジナルシフト"
+    evidence: "アイルランド民話に基づくオリジナル映画作品群で知られる。アカデミー賞に複数回ノミネート。自社オリジナルIPの企画・制作が中心。"
+    notable_works:
+      - "The Secret of Kells"
+      - "Song of the Sea"
+      - "Wolfwalkers"
+    sources:
+      - "https://www.cartoonsaloon.ie/about-irish-animation-studio/"
+      - "https://en.wikipedia.org/wiki/Cartoon_Saloon"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "original"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Disney+"
+    ip_ownership_score: 0.8
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Fortiche Production"
+    name_en: "Fortiche Production"
+    country: "FR"
+    region: "international"
+    founded: 2009
+    size_at_foundation: "約3人"
+    size_founded_num: 3
+    size_current: "約240人"
+    size_current_num: 240
+    axis_commission_vs_original: "混合"
+    original_score: 0.45
+    original_score_founded: 0.2
+    original_score_founded_evidence: "CM・ミュージックビデオの受託制作中心で創業"
+    evidence: "Riot Gamesとの協業で『Arcane』を制作し世界的に注目。IPはRiot保有だが映像の企画・演出はFortiche主導。自社オリジナルIP開発にも着手中。"
+    notable_works:
+      - "Arcane"
+      - "League of Legends MVs"
+      - "Rocket & Groot"
+    sources:
+      - "https://forticheprod.com/"
+      - "https://en.wikipedia.org/wiki/Fortiche"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "mixed"
+    production_type: "hybrid"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.25
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "DR Movie"
+    name_en: "DR Movie"
+    country: "KR"
+    region: "international"
+    founded: 1990
+    size_at_foundation: "約20人"
+    size_founded_num: 20
+    size_current: "約400人"
+    size_current_num: 400
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.05
+    original_score_founded: 0.02
+    original_score_founded_evidence: "Madhouse独占提携。完全受託の下請けスタジオ"
+    evidence: "日本のアニメスタジオや米国スタジオからの下請け・グロス請けが主力。マッドハウス傘下。自社オリジナルIPはほぼなく、韓国最大級のアニメーション下請けスタジオ。"
+    notable_works:
+      - "Avatar: The Last Airbender（制作協力）"
+      - "Ninja Scroll（制作協力）"
+      - "Claymore（制作協力）"
+    sources:
+      - "https://en.wikipedia.org/wiki/DR_Movie"
+      - "https://www.animenewsnetwork.com/encyclopedia/company.php?id=1184"
+    # 拡張フィールド
+    parent_company: "マッドハウス/日テレ"
+    ownership_type: "subsidiary"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform: []
+    ip_ownership_score: 0.02
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Studio Mir"
+    name_en: "Studio Mir"
+    country: "KR"
+    region: "international"
+    founded: 2010
+    size_at_foundation: "約20人"
+    size_founded_num: 20
+    size_current: "約120人"
+    size_current_num: 120
+    axis_commission_vs_original: "受託メイン"
+    original_score: 0.15
+    original_score_founded: 0.05
+    original_score_founded_evidence: "Nickelodeon大型受託で創業。完全受託型"
+    evidence: "『レジェンド・オブ・コーラ』『X-Men '97』等、米国スタジオからの受託アニメーション制作が売上の大半。自社オリジナルIP開発にも着手しているが現時点では受託が中心。"
+    notable_works:
+      - "The Legend of Korra"
+      - "Voltron: Legendary Defender"
+      - "X-Men '97"
+    sources:
+      - "https://studiomir.co.kr/en/sub/portfolio_list.php"
+      - "https://en.wikipedia.org/wiki/Studio_Mir"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "commission"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+      - "Disney+"
+    ip_ownership_score: 0.1
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Haoliners Animation League"
+    name_en: "Haoliners Animation League"
+    country: "CN"
+    region: "international"
+    founded: 2013
+    size_at_foundation: "不明"
+    size_founded_num: 5
+    size_current: "約200人"
+    size_current_num: 200
+    axis_commission_vs_original: "混合"
+    original_score: 0.4
+    original_score_founded: 0.55
+    original_score_founded_evidence: "中国ウェブアニメ市場向けオリジナル制作で開始"
+    evidence: "中国国内の2Dアニメ市場で新作の約半数を制作。『天官賜福』等のIP原作アニメ化受託が多いが、オリジナル作品も制作。Bilibili傘下。"
+    notable_works:
+      - "天官賜福"
+      - "狐妖小紅娘"
+      - "To Be Hero"
+    sources:
+      - "https://en.wikipedia.org/wiki/Haoliners_Animation_League"
+      - "https://grokipedia.com/page/Haoliners_Animation_League"
+    # 拡張フィールド
+    parent_company: "Bilibili"
+    ownership_type: "subsidiary"
+    business_model: "mixed"
+    production_type: "2d_traditional"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Bilibili"
+      - "Crunchyroll"
+    ip_ownership_score: 0.3
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
+
+  - name: "Tonko House"
+    name_en: "Tonko House"
+    country: "US"
+    region: "international"
+    founded: 2014
+    size_at_foundation: "約2人"
+    size_founded_num: 2
+    size_current: "約20人"
+    size_current_num: 20
+    axis_commission_vs_original: "オリジナルメイン"
+    original_score: 0.9
+    original_score_founded: 0.8
+    original_score_founded_evidence: "ex-Pixar設立。The Dam KeeperでオリジナルIP中心。推定値と一致"
+    evidence: "元Pixarのアートディレクター2名が設立。日本文化をテーマにしたオリジナルIP制作が中心。日米両国に拠点を持ち、アニメ文化の架け橋を志向。"
+    notable_works:
+      - "The Dam Keeper"
+      - "ONI: Thunder God's Tale"
+      - "Pig: The Dam Keeper Poems"
+    sources:
+      - "https://www.tonkohouse.com/about"
+      - "https://en.wikipedia.org/wiki/Daisuke_Tsutsumi"
+    # 拡張フィールド
+    parent_company: null
+    ownership_type: "independent"
+    business_model: "original"
+    production_type: "hybrid"
+    ai_adoption_level: "none"
+    ai_adoption_detail: null
+    primary_platform:
+      - "Netflix"
+    ip_ownership_score: 0.85
+    revenue_billion_yen: null
+    revenue_year: null
+    operating_margin: null
+    licensing_ratio: null
+    years_to_profitability: null
