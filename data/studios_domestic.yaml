@@ -1,0 +1,312 @@
+# 国内アニメスタジオ リサーチデータ
+# 調査日: 2026-02-24
+# 調査方法: Web検索による新規収集
+
+studios:
+  - name: "東映アニメーション"
+    name_en: "Toei Animation"
+    country: "JP"
+    founded: 1948
+    size_at_foundation: "約35人"
+    size_current: "約960人"
+    axis_commission_vs_original: "混合"
+    evidence: "ドラゴンボール・ワンピース・プリキュア等の原作付き作品が売上の柱だが、自社がIP保有・ライセンス管理を行い版権収入が大きい。近年はオリジナルIP創出も積極化しており、受託制作と自社IP活用の両面で事業展開。"
+    notable_works:
+      - "ONE PIECE"
+      - "ドラゴンボール"
+      - "プリキュアシリーズ"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%98%A0%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+      - "https://corp.toei-anim.co.jp/ja/company/outline.html"
+      - "https://en.wikipedia.org/wiki/Toei_Animation"
+      - "https://strainer.jp/notes/8752"
+
+  - name: "トムス・エンタテインメント"
+    name_en: "TMS Entertainment"
+    country: "JP"
+    founded: 1946
+    size_at_foundation: "不明"
+    size_current: "約307人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "名探偵コナン・ルパン三世・アンパンマン等、出版社・テレビ局発の原作付き作品の制作が中心。セガサミーグループの子会社として安定した受託制作体制を維持。自社オリジナルIPは少ない。"
+    notable_works:
+      - "名探偵コナン"
+      - "ルパン三世"
+      - "それいけ!アンパンマン"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%A0%E3%82%B9%E3%83%BB%E3%82%A8%E3%83%B3%E3%82%BF%E3%83%86%E3%82%A4%E3%83%B3%E3%83%A1%E3%83%B3%E3%83%88"
+      - "https://www.tms-e.co.jp/company/overview/"
+      - "https://en.wikipedia.org/wiki/TMS_Entertainment"
+
+  - name: "バンダイナムコフィルムワークス"
+    name_en: "Bandai Namco Filmworks"
+    country: "JP"
+    founded: 1972
+    size_at_foundation: "約7人"
+    size_current: "約646人"
+    axis_commission_vs_original: "混合"
+    evidence: "旧サンライズとして機動戦士ガンダムシリーズを筆頭に、自社オリジナルIPを多数保有。一方でバンダイナムコグループの映像部門として、グループIP関連の制作も受託。ガンダム・コードギアス等のオリジナルIPの版権収入が事業の大きな柱。"
+    notable_works:
+      - "機動戦士ガンダムシリーズ"
+      - "コードギアス 反逆のルルーシュ"
+      - "ラブライブ!"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%B3%E3%83%80%E3%82%A4%E3%83%8A%E3%83%A0%E3%82%B3%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B9"
+      - "https://www.bnfw.co.jp/corporate/profile/"
+      - "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%B3%E3%83%A9%E3%82%A4%E3%82%BA_(%E3%82%A2%E3%83%8B%E3%83%A1%E5%88%B6%E4%BD%9C%E3%83%96%E3%83%A9%E3%83%B3%E3%83%89)"
+
+  - name: "プロダクション・アイジー"
+    name_en: "Production I.G"
+    country: "JP"
+    founded: 1987
+    size_at_foundation: "不明"
+    size_current: "約219人"
+    axis_commission_vs_original: "混合"
+    evidence: "攻殻機動隊・PSYCHO-PASS等のオリジナルIPを保有する一方、ハイキュー!!等の出版社原作の受託制作も多数手がける。IGポートグループとしてIP事業にも注力しており、オリジナルと受託のバランスが取れている。"
+    notable_works:
+      - "攻殻機動隊シリーズ"
+      - "PSYCHO-PASS"
+      - "ハイキュー!!"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%83%80%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%A2%E3%82%A4%E3%82%B8%E3%83%BC"
+      - "https://www.production-ig.co.jp/company"
+      - "https://en.wikipedia.org/wiki/Production_I.G"
+
+  - name: "ユーフォーテーブル"
+    name_en: "ufotable"
+    country: "JP"
+    founded: 2000
+    size_at_foundation: "約数人"
+    size_current: "約256人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "鬼滅の刃・Fateシリーズ等、出版社やゲーム会社のIPを原作とする受託制作が事業の中心。制作品質の高さで知られるが、自社オリジナルIPの保有は少ない。IPの権利は原作側が保有するケースが主。"
+    notable_works:
+      - "鬼滅の刃"
+      - "Fate/stay night [Unlimited Blade Works]"
+      - "Fate/Zero"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%A6%E3%83%BC%E3%83%95%E3%82%A9%E3%83%BC%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB"
+      - "https://www.ufotable.com/about/"
+      - "https://en.wikipedia.org/wiki/Ufotable"
+
+  - name: "MAPPA"
+    name_en: "MAPPA"
+    country: "JP"
+    founded: 2011
+    size_at_foundation: "不明"
+    size_current: "約467人"
+    axis_commission_vs_original: "混合"
+    evidence: "進撃の巨人 The Final Season・呪術廻戦等の大型受託作品が売上の柱だが、チェンソーマンではアニプレックス等と共に製作委員会に出資。自社出資によるオリジナル企画にも積極的に取り組んでおり、受託と自社企画の混合型。"
+    notable_works:
+      - "呪術廻戦"
+      - "進撃の巨人 The Final Season"
+      - "チェンソーマン"
+    sources:
+      - "https://en.wikipedia.org/wiki/MAPPA"
+      - "https://www.mappa.co.jp/company/"
+      - "https://ja.wikipedia.org/wiki/%E4%B8%B8%E5%B1%B1%E6%AD%A3%E9%9B%84"
+
+  - name: "ウィットスタジオ"
+    name_en: "WIT STUDIO"
+    country: "JP"
+    founded: 2012
+    size_at_foundation: "不明"
+    size_current: "約320人"
+    axis_commission_vs_original: "混合"
+    evidence: "進撃の巨人（Season 1-3）等の受託制作で急成長した後、SPY×FAMILYの共同制作やオリジナル企画にも注力。近年はNetflix等の海外プラットフォーム向けオリジナル作品の企画・制作にも積極的に取り組んでいる。"
+    notable_works:
+      - "進撃の巨人（Season 1-3）"
+      - "SPY×FAMILY"
+      - "王様ランキング"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%83%83%E3%83%88%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA"
+      - "https://www.witstudio.co.jp/"
+      - "https://macc.bunka.go.jp/1768/"
+
+  - name: "CloverWorks"
+    name_en: "CloverWorks"
+    country: "JP"
+    founded: 2018
+    size_at_foundation: "不明"
+    size_current: "約240人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "アニプレックス子会社として、出版社やゲーム会社原作の作品制作が中心。ぼっち・ざ・ろっく!、SPY×FAMILY（共同制作）、約束のネバーランド等、原作付き作品の受託制作が事業の主軸。"
+    notable_works:
+      - "ぼっち・ざ・ろっく!"
+      - "SPY×FAMILY"
+      - "約束のネバーランド"
+    sources:
+      - "https://en.wikipedia.org/wiki/CloverWorks"
+      - "https://cloverworks.co.jp/about/"
+      - "https://job.mynavi.jp/26/pc/search/corp267657/outline.html"
+
+  - name: "A-1 Pictures"
+    name_en: "A-1 Pictures"
+    country: "JP"
+    founded: 2005
+    size_at_foundation: "不明"
+    size_current: "約250人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "アニプレックス100%子会社として、ソードアート・オンライン、かぐや様は告らせたい等の出版社原作作品の制作が中心。自社オリジナルIPは少なく、親会社アニプレックスやソニーグループの戦略に基づく受託制作が主。"
+    notable_works:
+      - "ソードアート・オンライン"
+      - "かぐや様は告らせたい"
+      - "リコリス・リコイル"
+    sources:
+      - "https://en.wikipedia.org/wiki/A-1_Pictures"
+      - "https://a1p.jp/about/"
+      - "https://job.mynavi.jp/26/pc/search/corp92846/outline.html"
+
+  - name: "京都アニメーション"
+    name_en: "Kyoto Animation"
+    country: "JP"
+    founded: 1981
+    size_at_foundation: "約数人"
+    size_current: "約188人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "自社レーベル「KAエスマ文庫」から原作を発掘・アニメ化する独自のビジネスモデルを確立。ヴァイオレット・エヴァーガーデン、響け!ユーフォニアム等、自社で原作権を保有する作品が多く、IP収入の内製化に成功している。"
+    notable_works:
+      - "涼宮ハルヒの憂鬱"
+      - "ヴァイオレット・エヴァーガーデン"
+      - "響け!ユーフォニアム"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E4%BA%AC%E9%83%BD%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3"
+      - "https://www.kyotoanimation.co.jp/company/outline/"
+      - "https://www.b-mall.ne.jp/CompanyDetail-HQbqCQizLRkq.html"
+
+  - name: "シャフト"
+    name_en: "SHAFT"
+    country: "JP"
+    founded: 1975
+    size_at_foundation: "約数人"
+    size_current: "約100人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "まどか☆マギカや物語シリーズ等、出版社・ゲーム会社原作の作品制作が中心。独自の演出スタイル（シャフト演出）で知られるが、IPの権利は主に製作委員会側が保有。自社オリジナルIPの展開は限定的。"
+    notable_works:
+      - "魔法少女まどか☆マギカ"
+      - "〈物語〉シリーズ"
+      - "3月のライオン"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%A3%E3%83%95%E3%83%88_(%E3%82%A2%E3%83%8B%E3%83%A1%E5%88%B6%E4%BD%9C%E4%BC%9A%E7%A4%BE)"
+      - "https://www.shaft-web.co.jp/"
+      - "https://cgworld.jp/stdatabase/30592.html"
+
+  - name: "ボンズ"
+    name_en: "BONES"
+    country: "JP"
+    founded: 1998
+    size_at_foundation: "約8人"
+    size_current: "約119人"
+    axis_commission_vs_original: "混合"
+    evidence: "僕のヒーローアカデミア等の受託作品が売上の柱である一方、交響詩篇エウレカセブン、STAR DRIVER等のオリジナル作品も継続的に制作。「オリジナルアニメを作り続ける」ことを企業理念に掲げており、受託とオリジナルのバランスを重視。"
+    notable_works:
+      - "僕のヒーローアカデミア"
+      - "鋼の錬金術師"
+      - "交響詩篇エウレカセブン"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%9C%E3%83%B3%E3%82%BA_(%E3%82%A2%E3%83%8B%E3%83%A1%E5%88%B6%E4%BD%9C%E4%BC%9A%E7%A4%BE)"
+      - "https://www.bones.co.jp/"
+      - "https://natalie.mu/comic/column/535680"
+      - "https://akiba-souken.com/article/36602/"
+
+  - name: "マッドハウス"
+    name_en: "Madhouse"
+    country: "JP"
+    founded: 1972
+    size_at_foundation: "約4人"
+    size_current: "約70人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "日本テレビ子会社として、出版社原作の受託制作が事業の中心。ワンパンマン、DEATH NOTE、ノーゲーム・ノーライフ等、原作付き作品の制作実績が多い。かつてはオリジナル作品も手がけたが、近年は受託比率が高い。"
+    notable_works:
+      - "DEATH NOTE"
+      - "ワンパンマン"
+      - "サマーウォーズ"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%8F%E3%82%A6%E3%82%B9"
+      - "https://www.madhouse.co.jp/"
+      - "https://baseconnect.in/companies/5e6d7566-d469-41c3-bfcc-48518a8e89e7"
+
+  - name: "ポリゴン・ピクチュアズ"
+    name_en: "Polygon Pictures"
+    country: "JP"
+    founded: 1983
+    size_at_foundation: "不明"
+    size_current: "約300人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "シドニアの騎士、GODZILLA三部作等のフル3DCGアニメ制作が主力。Netflix・Disney+等の海外プラットフォーム向け受託制作が多く、スター・ウォーズ関連作品等の海外IPの制作も手がける。自社オリジナルIPは限定的。"
+    notable_works:
+      - "シドニアの騎士"
+      - "GODZILLA（アニメ三部作）"
+      - "トランスフォーマー：アースパーク"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%9D%E3%83%AA%E3%82%B4%E3%83%B3%E3%83%BB%E3%83%94%E3%82%AF%E3%83%81%E3%83%A5%E3%82%A2%E3%82%BA"
+      - "https://www.ppi.co.jp/about/factsheet/"
+      - "https://www.ppi.co.jp/about/overview/"
+
+  - name: "オレンジ"
+    name_en: "Orange"
+    country: "JP"
+    founded: 2004
+    size_at_foundation: "約数人"
+    size_current: "約170人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "宝石の国、BEASTARS等の出版社原作のフル3DCGアニメ制作が主力。近年はゴジラ S.P等の受託制作でも実績を積む。3DCGアニメの制作請負が事業の中心で、自社オリジナルIPの展開は限定的。"
+    notable_works:
+      - "宝石の国"
+      - "BEASTARS"
+      - "TRIGUN STAMPEDE"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8_(%E3%82%A2%E3%83%8B%E3%83%A1%E5%88%B6%E4%BD%9C%E4%BC%9A%E7%A4%BE)"
+      - "https://www.orange-cg.com/company/"
+      - "https://natalie.mu/comic/column/572378"
+
+  - name: "サイエンスSARU"
+    name_en: "Science SARU"
+    country: "JP"
+    founded: 2013
+    size_at_foundation: "約4人"
+    size_current: "約51人"
+    axis_commission_vs_original: "混合"
+    evidence: "湯浅政明監督のオリジナル作品（映像研には手を出すな!、犬王等）で知られる一方、ダンダダン等の出版社原作の受託制作も手がける。小規模ながら作家性の強い作品を企画・制作しており、オリジナルと受託のバランスが取れている。"
+    notable_works:
+      - "映像研には手を出すな!"
+      - "ダンダダン"
+      - "犬王"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9SARU"
+      - "https://sciencesaru.com/about"
+      - "https://baseconnect.in/companies/0b9bd893-54e8-40f8-9fb6-db096a1df0ec"
+
+  - name: "スタジオコロリド"
+    name_en: "Studio Colorido"
+    country: "JP"
+    founded: 2011
+    size_at_foundation: "不明"
+    size_current: "約40人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "泣きたい私は猫をかぶる、雨を告げる漂流団地等、オリジナル劇場作品の企画・制作が事業の中心。ツインエンジングループの一員として、オリジナルIPの創出に注力。自社企画の劇場アニメーションが主力事業。"
+    notable_works:
+      - "泣きたい私は猫をかぶる"
+      - "雨を告げる漂流団地"
+      - "ペンギン・ハイウェイ"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%82%B8%E3%82%AA%E3%82%B3%E3%83%AD%E3%83%AA%E3%83%89"
+      - "https://colorido.co.jp/company/"
+      - "https://colorido.co.jp/studio/"
+
+  - name: "ツインエンジン"
+    name_en: "Twin Engine"
+    country: "JP"
+    founded: 2014
+    size_at_foundation: "約2人"
+    size_current: "約107人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "元フジテレビ ノイタミナ編集長の山本幸治が設立したアニメプロデュース会社。傘下に15のグループ制作スタジオを抱え、オリジナル企画の開発・プロデュースが事業の柱。スタジオファースト戦略を掲げ、クリエイター主導の作品づくりを推進。"
+    notable_works:
+      - "劇場版 モノノ怪"
+      - "ドロヘドロ"
+      - "ゴールデンカムイ"
+    sources:
+      - "https://ja.wikipedia.org/wiki/%E3%83%84%E3%82%A4%E3%83%B3%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3"
+      - "https://twinengine.jp/company-info/"
+      - "https://growth-100-oku.smrj.go.jp/companies/pdf/01255-00.pdf"

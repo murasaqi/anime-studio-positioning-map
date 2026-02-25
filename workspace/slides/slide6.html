@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #FFFFFF; font-family: Arial, sans-serif;
+  display: flex; flex-direction: column;
+}
+.header {
+  background: #1C2833; padding: 12pt 24pt;
+}
+.header h1 { color: #FFFFFF; font-size: 18pt; margin: 0; }
+.content {
+  flex: 1; display: flex; padding: 16pt 24pt; gap: 20pt;
+}
+.col {
+  flex: 1;
+}
+.col h2 { color: #1C2833; font-size: 13pt; margin: 0 0 8pt 0; }
+.legend-item {
+  display: flex; align-items: center; margin: 0 0 6pt 0;
+}
+.dot-blue {
+  width: 10pt; height: 10pt; background: #3498DB; border-radius: 50%;
+  margin: 0 8pt 0 0;
+}
+.dot-red {
+  width: 10pt; height: 10pt; background: #E74C3C; border-radius: 50%;
+  margin: 0 8pt 0 0;
+}
+.dot-gold {
+  width: 10pt; height: 10pt; background: #F1C40F; border-radius: 50%;
+  margin: 0 8pt 0 0;
+}
+.legend-item p { color: #2C3E50; font-size: 10pt; margin: 0; }
+.axis-info p { color: #566573; font-size: 9pt; margin: 3pt 0; }
+.sources p { color: #566573; font-size: 7pt; margin: 2pt 0; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>凡例・出典</h1>
+</div>
+<div class="content">
+  <div class="col">
+    <h2>凡例</h2>
+    <div class="legend-item">
+      <div class="dot-blue"></div>
+      <p>国内スタジオ（18社）</p>
+    </div>
+    <div class="legend-item">
+      <div class="dot-red"></div>
+      <p>海外スタジオ（11社）</p>
+    </div>
+    <div class="legend-item">
+      <div class="dot-gold"></div>
+      <p>当社（AIアニメスタジオ）提案ポジション</p>
+    </div>
+    <h2>軸の定義</h2>
+    <div class="axis-info">
+      <p>横軸: 受託メイン（0.0）⇔ オリジナル制作メイン（1.0）</p>
+      <p>　判定基準: 売上構成・作品本数・IP保有主体</p>
+      <p>縦軸: スタジオ人数規模（対数スケール）</p>
+      <p>　正社員・常駐スタッフ数（概数・推定値含む）</p>
+    </div>
+    <h2>分類基準</h2>
+    <div class="axis-info">
+      <p>受託メイン（0.0-0.3）: 他社IP制作が売上の大半</p>
+      <p>混合（0.3-0.7）: 受託とオリジナルのバランス型</p>
+      <p>オリジナルメイン（0.7-1.0）: 自社IP中心の事業</p>
+    </div>
+  </div>
+  <div class="col">
+    <h2>主要データソース</h2>
+    <div class="sources">
+      <p>各社公式サイト・会社概要ページ</p>
+      <p>Wikipedia（日本語版・英語版）</p>
+      <p>有価証券報告書（上場企業）</p>
+      <p>求人サイト（マイナビ等）掲載の企業情報</p>
+      <p>業界メディア（Natalie、CGWORLD等）</p>
+      <p>海外メディア（Variety、Deadline、Animation Magazine等）</p>
+      <p>企業データベース（Baseconnect、ZoomInfo等）</p>
+    </div>
+    <h2>注意事項</h2>
+    <div class="sources">
+      <p>非上場企業の従業員数は推定値を含みます</p>
+      <p>受託/オリジナル比率は公開情報からの推定です</p>
+      <p>設立時の人数は創業メンバー数の推定を含みます</p>
+      <p>現在の人数は2024-2025年時点の最新情報に基づきます</p>
+      <p>詳細なデータソースはリサーチレポート末尾に記載</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

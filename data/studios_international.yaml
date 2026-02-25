@@ -1,0 +1,202 @@
+# 海外アニメーションスタジオ リサーチデータ
+# 調査日: 2026-02-24
+# 調査方法: Web検索による新規収集
+
+studios:
+  - name: "Pixar Animation Studios"
+    name_local: ""
+    country: "US"
+    founded: 1986
+    size_at_foundation: "約40人"
+    size_current: "約1100人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "自社オリジナルIP（トイ・ストーリー、ファインディング・ニモ等）を中心に制作。ディズニー傘下だが、企画・制作とも自社主導でIPを保有・展開している。受託制作はほぼ行わない。"
+    notable_works:
+      - "Toy Story (1995)"
+      - "Finding Nemo (2003)"
+      - "Inside Out (2015)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Pixar"
+      - "https://www.pixar.com/our-story"
+      - "https://www.britannica.com/money/Pixar-Animation-Studios"
+      - "https://variety.com/2024/film/news/pixar-layoffs-175-staffers-cut-1236011766/"
+
+  - name: "DreamWorks Animation"
+    name_local: ""
+    country: "US"
+    founded: 1994
+    size_at_foundation: "約250人"
+    size_current: "約2700人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "シュレック、カンフー・パンダ等の自社オリジナルIPを多数保有。IPライセンス収益・マーチャンダイジングが主要収益源であり、外部からの受託制作は行わない。NBCUniversal傘下。"
+    notable_works:
+      - "Shrek (2001)"
+      - "Kung Fu Panda (2008)"
+      - "How to Train Your Dragon (2010)"
+    sources:
+      - "https://en.wikipedia.org/wiki/DreamWorks_Animation"
+      - "https://www.dreamworks.com/about"
+      - "https://blog.osum.com/dreamworks-business-model/"
+      - "https://seekingalpha.com/article/1588102-dreamworks-animation-the-value-is-in-ip-licensing-and-residuals"
+
+  - name: "Illumination"
+    name_local: ""
+    country: "US"
+    founded: 2007
+    size_at_foundation: "不明"
+    size_current: "約800人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "怪盗グルー／ミニオンズ、ペット、SING等の自社オリジナルIPを保有・展開。制作はIllumination Studios Paris（旧Mac Guff、約500人）に外注する独自モデルだが、IPの企画・保有は自社。受託制作は行わない。"
+    notable_works:
+      - "Despicable Me (2010)"
+      - "The Secret Life of Pets (2016)"
+      - "Sing (2016)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Illumination_(company)"
+      - "https://rocketreach.co/illumination-profile_b5cc9bbaf42e0a8b"
+      - "https://en.wikipedia.org/wiki/Illumination_Studios_Paris"
+      - "https://www.illuminationstudiosparis.com/"
+
+  - name: "Powerhouse Animation Studios"
+    name_local: ""
+    country: "US"
+    founded: 2001
+    size_at_foundation: "約3人"
+    size_current: "約130人"
+    axis_commission_vs_original: "混合"
+    evidence: "Netflix『悪魔城ドラキュラ』『Blood of Zeus』等の受託制作で成長。一方で自社オリジナル作品『Seis Manos』も制作。Netflixとファーストルック契約を締結しており、受託を基盤としつつオリジナルIPにも進出中。"
+    notable_works:
+      - "Castlevania (2017-2021)"
+      - "Blood of Zeus (2020-)"
+      - "Seis Manos (2019)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Powerhouse_Animation_Studios"
+      - "https://www.powerhouseanimation.com/about/"
+      - "https://deadline.com/2021/06/powerhouse-animation-first-look-deal-netflix-castlevania-masters-of-the-universe-1234784152/"
+      - "https://www.zippia.com/powerhouse-animation-studios-careers-813835/"
+
+  - name: "Titmouse, Inc."
+    name_local: ""
+    country: "US"
+    founded: 2000
+    size_at_foundation: "約2人"
+    size_current: "約1200人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "大手スタジオ（Netflix、Adult Swim、Amazon等）からの委託制作が主力。『ヴェンチャー・ブラザーズ』『Big Mouth』『Star Trek: Lower Decks』等、クライアントのIPに基づく制作が大半。自社オリジナルIPは限定的。独立系最大級のアニメスタジオ。"
+    notable_works:
+      - "The Venture Bros. (2003-2018)"
+      - "Big Mouth (2017-)"
+      - "The Legend of Vox Machina (2022-)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Titmouse,_Inc."
+      - "https://www.cnbc.com/2024/09/14/hollywoods-secret-weapon-is-an-animation-studio-called-titmouse.html"
+      - "https://www.animationmagazine.net/2025/03/titmouse-studio-co-founders-chris-shannon-prynoski-share-the-secrets-of-25-years-of-success/"
+      - "https://titmouse.net/about/"
+
+  - name: "Cartoon Saloon"
+    name_local: ""
+    country: "IE"
+    founded: 1999
+    size_at_foundation: "約3人"
+    size_current: "約300人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "『ブレンダンとケルズの秘密』『ソング・オブ・ザ・シー』『ウルフウォーカー』等のアイルランド民話に基づくオリジナル映画作品群（アイリッシュ・フォークロア三部作）で知られる。アカデミー賞に複数回ノミネート。自社オリジナルIPの企画・制作が中心。"
+    notable_works:
+      - "The Secret of Kells (2009)"
+      - "Song of the Sea (2014)"
+      - "Wolfwalkers (2020)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Cartoon_Saloon"
+      - "https://www.cartoonsaloon.ie/about-irish-animation-studio/"
+      - "https://www.animationforadults.com/2024/05/25-years-of-cartoon-saloon-story-of.html"
+      - "https://contactout.com/company/Cartoon-Saloon-33650"
+
+  - name: "Fortiche Production"
+    name_local: ""
+    country: "FR"
+    founded: 2009
+    size_at_foundation: "約3人"
+    size_current: "約240人"
+    axis_commission_vs_original: "混合"
+    evidence: "Riot Gamesとの協業で『Arcane』を制作し、世界的に注目された。IPはRiot Games保有だが、映像の企画・演出・制作はFortiche主導。設立当初はCM受託が中心だったが、Arcane以降はRiotが株式を取得し長期パートナーシップを構築。自社オリジナルIP『Miss Saturne』『Penelope of Sparta』も開発中。"
+    notable_works:
+      - "Arcane (2021-2024)"
+      - "League of Legends Music Videos (Get Jinxed, Warriors等)"
+      - "Rocket & Groot (Marvel Studios)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Fortiche"
+      - "https://gamerant.com/fortiche-a-look-into-the-hit-studio-behind-arcane/"
+      - "https://www.riotgames.com/en/news/riot-games-announces-new-equity-investment-in-arcane-animation-studio-fortiche-production"
+      - "https://forticheprod.com/"
+
+  - name: "DR Movie"
+    name_local: "디알무비"
+    country: "KR"
+    founded: 1990
+    size_at_foundation: "約20人"
+    size_current: "約400人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "設立以来、日本のアニメスタジオ（マッドハウス、MAPPA、A-1 Pictures等）や米国スタジオ（Nickelodeon、Warner Bros.等）からの下請け・グロス請けが主力。2001年からマッドハウス傘下。自社オリジナルIPはほぼなく、韓国最大級のアニメーション下請けスタジオ。"
+    notable_works:
+      - "Avatar: The Last Airbender (制作協力, 2005-2008)"
+      - "Ninja Scroll (制作協力, 1993)"
+      - "Claymore (制作協力, 2007)"
+    sources:
+      - "https://en.wikipedia.org/wiki/DR_Movie"
+      - "https://en.namu.wiki/w/%EB%94%94%EC%95%8C%EB%AC%B4%EB%B9%84"
+      - "https://tvtropes.org/pmwiki/pmwiki.php/Creator/DRMovie"
+      - "https://www.animenewsnetwork.com/encyclopedia/company.php?id=1184"
+
+  - name: "Studio Mir"
+    name_local: "스튜디오 미르"
+    country: "KR"
+    founded: 2010
+    size_at_foundation: "約20人"
+    size_current: "約120人"
+    axis_commission_vs_original: "受託メイン"
+    evidence: "『レジェンド・オブ・コーラ』『ヴォルトロン』『X-Men '97』等、米国スタジオからの受託アニメーション制作が売上の大半。2023年にKOSDAQ上場。自社オリジナルIP開発（『Koji』等）にも着手しているが、現時点では受託が中心。"
+    notable_works:
+      - "The Legend of Korra (2012-2014)"
+      - "Voltron: Legendary Defender (2016-2018)"
+      - "X-Men '97 (2024)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Studio_Mir"
+      - "https://studiomir.co.kr/en/sub/portfolio_list.php"
+      - "https://avatar.fandom.com/wiki/Studio_Mir"
+      - "https://grokipedia.com/page/Studio_Mir"
+
+  - name: "Haoliners Animation League"
+    name_local: "绘梦动画"
+    country: "CN"
+    founded: 2013
+    size_at_foundation: "不明"
+    size_current: "約200人"
+    axis_commission_vs_original: "混合"
+    evidence: "中国国内の2Dアニメ市場で新作の約半数を制作したとされる。『天官賜福』『狐妖小紅娘』等のIP原作（小説・漫画）のアニメ化受託が多いが、『To Be Hero』等のオリジナル作品も制作。Bilibili傘下。日本子会社・絵梦（Emon）を通じて日中合作アニメも展開。"
+    notable_works:
+      - "Heaven Official's Blessing / 天官賜福 (2020-)"
+      - "Fox Spirit Matchmaker / 狐妖小紅娘 (2015-)"
+      - "To Be Hero (2016)"
+    sources:
+      - "https://en.wikipedia.org/wiki/Haoliners_Animation_League"
+      - "https://www.yualexius.com/2021/05/anime-by-haoliners-animation.html"
+      - "https://grokipedia.com/page/Haoliners_Animation_League"
+      - "https://www.zoominfo.com/c/haoliners-animation-league/425779772"
+
+  - name: "Tonko House"
+    name_local: "トンコハウス"
+    country: "US"
+    founded: 2014
+    size_at_foundation: "約2人"
+    size_current: "約20人"
+    axis_commission_vs_original: "オリジナルメイン"
+    evidence: "元Pixarのアートディレクター2名が設立。アカデミー賞ノミネート短編『ダム・キーパー』やNetflixシリーズ『ONI: Thunder God's Tale』等、日本文化をテーマにしたオリジナルIP制作が中心。日米両国に拠点を持ち、両国のアニメーション文化の架け橋を志向。"
+    notable_works:
+      - "The Dam Keeper (2014)"
+      - "ONI: Thunder God's Tale (2022)"
+      - "Pig: The Dam Keeper Poems (2017)"
+    sources:
+      - "https://www.tonkohouse.com/about"
+      - "https://en.wikipedia.org/wiki/Daisuke_Tsutsumi"
+      - "https://variety.com/2022/artisans/news/tonko-house-netflix-oni-thunder-gods-tale-1235409233/"
+      - "https://contactout.com/company/Tonko-House-Inc-74708"
