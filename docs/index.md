@@ -9,7 +9,7 @@ description: "AIアニメスタジオ関連のリサーチドキュメント"
 
 ---
 
-{% assign docs = site.pages | where_exp: "p", "p.path contains 'docs/' and p.path != 'docs/index.md'" | sort: "order" %}
+{% assign docs = site.pages | where_exp: "p", "p.path contains 'docs/'" | where_exp: "p", "p.path != 'docs/index.md'" | sort: "order" %}
 {% for doc in docs %}
 ### [{{ doc.title }}]({{ doc.url | relative_url }})
 {{ doc.description }}
