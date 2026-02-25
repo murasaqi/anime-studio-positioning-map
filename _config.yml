@@ -1,0 +1,11 @@
+title: "アニメスタジオ ポジショニングマップ"
+description: "国内外アニメスタジオのポジショニング分析"
+remote_theme: pages-themes/cayman@v0.2.0
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+exclude:
+  - create_plotly_map.py
+  - data/
+  - README.md
