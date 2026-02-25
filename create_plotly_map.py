@@ -375,7 +375,12 @@ def make_categorical_scatter(studio_list, color_field, palette, label_map,
             for s in merged:
                 val = s.get(size_field)
                 if val and val > 0:
-                    sizes.append(max(6, min(30, 6 + 8 * math.log10(val))))
+                    if val <= 1:
+                        # スコア/比率値 (0-1): 線形スケーリング (5px〜41px)
+                        sizes.append(max(5, min(41, 5 + val * 40)))
+                    else:
+                        # 人数等の大きな値: 対数スケーリング
+                        sizes.append(max(6, min(30, 6 + 8 * math.log10(val))))
                 else:
                     sizes.append(8)
             ms = sizes
@@ -542,21 +547,21 @@ for tr in make_growth_line_traces(growth_intl, COLOR_INTERNATIONAL, "海外"):
 
 
 # --- ビュー4: ビジネスモデル分析マップ ---
-# X: original_score, Y: ip_ownership_score, Size: size_current_num, Color: business_model
+# X: original_score, Y: size_current_num, Size: ip_ownership_score, Color: business_model
 visibility_map["business_model"] = []
-bm_studios = [s for s in studios if s.get("ip_ownership_score") is not None]
+bm_studios = [s for s in studios if s.get("size_current_num") is not None]
 for tr in make_categorical_scatter(
     bm_studios, "business_model",
     COLOR_PALETTES["business_model"],
     LABEL_NAMES["business_model"],
     x_key="original_score",
-    y_key="ip_ownership_score",
-    size_field="size_current_num",
+    y_key="size_current_num",
+    size_field="ip_ownership_score",
 ):
     traces.append(tr)
     trace_point_maps[len(traces) - 1] = build_point_map(
         [s for s in bm_studios if s.get("business_model") == tr.name.replace("", "")],
-        "original_score", "ip_ownership_score"
+        "original_score", "size_current_num"
     )
     visibility_map["business_model"].append(len(traces) - 1)
 
@@ -575,7 +580,7 @@ for i, view_idx in enumerate(visibility_map["business_model"]):
             break
     if cat_key:
         cat_studios = [s for s in bm_studios if s.get("business_model") == cat_key]
-        trace_point_maps[view_idx] = build_point_map(cat_studios, "original_score", "ip_ownership_score")
+        trace_point_maps[view_idx] = build_point_map(cat_studios, "original_score", "size_current_num")
 
 
 # --- ビュー5: AI活用度マップ ---
@@ -852,7 +857,7 @@ titles = {
     "founded": "設立時マップ — 全29社を設立時の規模でプロット",
     "current": "現在マップ — 全29社を現在の規模でプロット",
     "growth": "成長軌跡マップ — 設立時→現在",
-    "business_model": "ビジネスモデル分析 — オリジナルスコア × IP保有率",
+    "business_model": "ビジネスモデル分析 — 制作スタイル × 規模",
     "ai_adoption": "AI活用度マップ — オリジナルスコア × 人数規模",
     "revenue": "収益・規模マップ — 営業利益率 × 売上高（上場企業等の公開データのみ）",
     "ownership": "所有構造マップ — オリジナルスコア × 人数規模",
@@ -900,11 +905,11 @@ axis_configs = {
         "xaxis.range": AXIS_RANGE_X,
         "xaxis.dtick": 0.1,
         "xaxis.tickformat": ".1f",
-        "yaxis.title.text": "IP保有率スコア",
-        "yaxis.type": "linear",
-        "yaxis.range": [-0.05, 1.05],
-        "yaxis.dtick": 0.1,
-        "yaxis.tickformat": ".1f",
+        "yaxis.title.text": "人数規模（人）",
+        "yaxis.type": "log",
+        "yaxis.range": AXIS_RANGE_Y_LOG,
+        "yaxis.dtick": None,
+        "yaxis.tickformat": ",d",
     },
     "ai_adoption": {
         "xaxis.title.text": "← 受託          オリジナル →",
